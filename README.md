@@ -1,7 +1,8 @@
 # Codo-Codo-4.0-Proyecto-Final
-Tienda de Mascotas
+Proyecto Final Obligatorio
 
-# Proyecto-curso
+# Tienda de Mascotas
+
 Trabajo Integrador Grupo 3
 
 Este es un trabajo integrador del grupo 3 integrado por cuatro estudiantes, 
