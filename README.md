@@ -1,4 +1,9 @@
-# Proyecto-curso
+# Codo-Codo 4.0
+
+Proyecto Final Obligatorio
+
+# Tienda de Mascotas
+
 Trabajo Integrador Grupo 3
 
 Este es un trabajo integrador del grupo 3 integrado por cuatro estudiantes, (Javier Salguero, Ricardo Gomez Granillo, Johanna Zarate y Damian Perez). 
