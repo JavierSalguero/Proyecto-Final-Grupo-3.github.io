@@ -1,82 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" type="imagem/png" href="./img/icon.png" />
-    <title>Tienda de Mascotas</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="imagem/png" href="./img/icon.png" />
+  <title>Tienda de Mascotas</title>
 </head>
+
 <body>
-    
-    <header>
-        <a href="" class="link-header">Inicio</a>
-        <a href="" class="link-header">Acerca de Nosotros</a>
-        <a href="" class="link-header">Productos</a>
-        <a href="" class="link-header">Servicios</a>
-        <a href="" class="link-header">Contacto</a>
-        <button class="button-header">Acceder</button>
-    </header>
-<main>
 
-      <div class="contact_form">
+  <header>
+    <a href="./index.html" class="link-header">Inicio</a>
+    <a href="" class="link-header">Acerca de Nosotros</a>
+    <a href="" class="link-header">Productos</a>
+    <a href="" class="link-header">Servicios</a>
+    <a href="" class="link-header">Contacto</a>
+    <button class="button-header">Acceder</button>
+  </header>
+  <main>
 
-    <div class="formulario">      
-      <h1>Formulario de contacto</h1>
+    <div class="contact_form">
+
+      <div class="formulario">
+        <h1>Formulario de contacto</h1>
         <h3>Escríbanos y en breve nos pondremos en contacto con usted</h3>
 
 
-          <form action="submeter-formulario.php" method="post">       
+        <form id="miFormulario" action="submeter-formulario.php" method="post">
 
-            
-                <p>
-                  <label for="nombre" class="colocar_nombre">Nombre
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-              
-                <p>
-                  <label for="email" class="colocar_email">Email
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-            
-                <p>
-                  <label for="telefone" class="colocar_telefono">Teléfono
-                  </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
-              
-                
-              
-                <p>
-                  <label for="asunto" class="colocar_asunto">Asunto
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-              
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                </p>                    
-              
-                               
- 
-                  <button onclick="alerta()">Enviar</button>
+          <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre">
+          </p>
 
-                <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>          
-            
-          </form>
-    </div>  
-  </div>
+          <p>
+            <label for="email" class="colocar_email">Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" placeholder="Escribe tu Email">
+          </p>
+
+          <p>
+            <label for="telefone" class="colocar_telefono">Teléfono
+            </label>
+            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+          </p>
+
+          <p>
+            <label for="asunto" class="colocar_asunto">Asunto
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_asunto" id="asunto" placeholder="Escribe un asunto">
+          </p>
+
+          <p>
+            <label for="mensaje" class="colocar_mensaje">Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+              placeholder="Deja aquí tu comentario..."></textarea>
+          </p>
+
+          <button type="submit">Enviar</button>
+
+          <p class="aviso">
+            <span class="obligatorio">*</span> Los campos marcados son obligatorios.
+          </p>
+
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function validarFormulario(event) {
+      // Obtener referencias a los campos del formulario
+      const nombre = document.getElementById('nombre');
+      const email = document.getElementById('email');
+      const asunto = document.getElementById('asunto');
+      const mensaje = document.getElementById('mensaje');
+
+      // Verificar si los campos están vacíos
+      if (!nombre.value.trim() || !email.value.trim() || !asunto.value.trim() || !mensaje.value.trim()) {
+        // Evitar que el formulario se envíe
+        event.preventDefault();
+        // Mostrar mensaje de error
+        alert('Por favor, completa todos los campos obligatorios.');
+      }
+    }
+
+    // Asociar la función validarFormulario al evento submit del formulario
+    document.getElementById('miFormulario').addEventListener('submit', validarFormulario);
+  </script>
+
+</body>
+
+</html>
