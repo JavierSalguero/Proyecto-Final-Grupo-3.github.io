@@ -87,3 +87,34 @@ p {
 .obligatorio {
     color: red;
   }
+
+  .service {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service-titulo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:  wrap;
+    margin-top: 20px;
+}
+
+.service-item {
+    width: 45%;
+    position: relative;
+    text-align: center;
+}
+
+.capa p {
+    font-size: 15px ;
+}
+
+.pelu {
+    margin-top: 37px; 
+}
+
+.nutricion {
+    margin-top: 13px;
+}
