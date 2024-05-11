@@ -118,3 +118,18 @@ p {
 .nutricion {
     margin-top: 13px;
 }
+
+footer {
+    background-color: #f8b66b;
+    color: #fff;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 3px;
+    font-size: 0.8em;
+    color: #fff;
+}
