@@ -1,0 +1,25 @@
+.obligatorio {
+    color: red;
+  }
+
+.formulario {
+    text-align: center;
+}
+
+.formulario h2, h3 {
+    margin-top: 80px;
+}
+
+.campos {
+    margin-left: 400px;
+    text-align: start;
+}
+
+#miFormulario button {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.aviso {
+    margin-left: 370px;
+}
