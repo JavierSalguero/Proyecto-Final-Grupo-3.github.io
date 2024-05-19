@@ -6,10 +6,10 @@
 }
 
 .categoria h2 {
-    border-bottom: 1px solid #ccc;
     margin-right: 250px;
     display: inline-block;
     margin-bottom: 50px;
+    text-decoration: none;
 }
 
 .categoria-contenido {

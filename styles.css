@@ -117,8 +117,11 @@
 
 header {
     background-color: #6b8cf8;
-    padding: 10px 0;
+    padding: 20px 0;
 }
+
+header a {
+text-decoration: none;}
 
 .link-header {
     font-weight: 600;
